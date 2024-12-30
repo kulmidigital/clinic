@@ -1,5 +1,21 @@
-import PharmacyComingSoon from "./pharmacy-coming-soon";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Products from "@/components/Products";
+import MissionVision from "@/components/MissionVision";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
-  return <PharmacyComingSoon />;
+  return (
+    <main className='relative'>
+      <Navbar />
+      <Hero />
+      <About />
+      <Products />
+      <MissionVision />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }
