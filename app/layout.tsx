@@ -4,8 +4,8 @@ import "./globals.css";
 const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Northway Pharma - Coming Soon",
-  description: "We're working hard to bring you a better pharmacy experience.",
+  title: "Northway Pharmaceuticals",
+  description: "Providing quality healthcare solutions to the community.",
 };
 
 export default function RootLayout({
