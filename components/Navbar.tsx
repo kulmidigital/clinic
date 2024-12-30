@@ -21,7 +21,6 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Products", href: "#products" },
     { name: "Mission & Vision", href: "#mission-vision" },
-    { name: "Contact", href: "#contact" },
   ];
 
   useEffect(() => {

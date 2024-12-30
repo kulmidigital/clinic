@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -362,20 +362,25 @@ export default function Products() {
   const [currentPage, setCurrentPage] = useState(1);
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [displayedProducts, setDisplayedProducts] = useState(products);
 
   const categories = [
     "All",
     ...Array.from(new Set(products.map((product) => product.category))),
   ];
 
-  const filteredProducts =
-    activeCategory === "All"
-      ? products
-      : products.filter((product) => product.category === activeCategory);
+  useEffect(() => {
+    const filtered =
+      activeCategory === "All"
+        ? products
+        : products.filter((product) => product.category === activeCategory);
+    setDisplayedProducts(filtered);
+    setCurrentPage(1); // Reset to first page when category changes
+  }, [activeCategory]);
 
-  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(displayedProducts.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentProducts = filteredProducts.slice(
+  const currentProducts = displayedProducts.slice(
     startIndex,
     startIndex + ITEMS_PER_PAGE
   );
@@ -436,6 +441,7 @@ export default function Products() {
 
         {/* Products Grid */}
         <motion.div
+          key={`${activeCategory}-${currentPage}`}
           variants={containerVariants}
           initial='hidden'
           whileInView='visible'
