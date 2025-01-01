@@ -304,22 +304,6 @@ const products: Product[] = [
   },
   {
     id: 19,
-    name: "Pregic",
-    description: "Pregabalin Capsule 75mg for nerve pain management",
-    image: "/images/IMG_3584.jpg",
-    category: "Capsules",
-    details: {
-      uses: [
-        "Neuropathic pain management",
-        "Nerve pain relief",
-        "Nerve health support",
-      ],
-      dosage: "As directed by the Physician",
-      composition: "Each hard gelatin capsule contains: Pregabalin USP 75mg",
-    },
-  },
-  {
-    id: 21,
     name: "Mirtanor-15",
     description: "Mirtazapine Tablets USP 15mg for depression and anxiety",
     image: "/images/IMG_3594.jpg",
@@ -328,6 +312,59 @@ const products: Product[] = [
       uses: ["Depression treatment", "Anxiety management", "Sleep improvement"],
       dosage: "As directed by the Physician",
       composition: "Each Film Coated Tablet Contains: Mirtazapine USP 15mg",
+    },
+  },
+  {
+    id: 20,
+    name: "Elbombino Forte",
+    description:
+      "Vitamin A, E, B12, Folic Acid, Biotin, Pantothenic Acid, Minerals & Iron with Vitamin K2-7 Syrup",
+    image: "/images/IMG_3582.jpg",
+    category: "Syrup",
+    details: {
+      uses: [
+        "Health and height booster",
+        "Growth and development support",
+        "Nutritional supplementation",
+      ],
+      dosage: "As directed by the Physician",
+      composition:
+        "Vitamin A, Vitamin E, Vitamin B12, Folic Acid, Biotin, Pantothenic Acid, Manganese, Zinc, Copper, Chromium, Choline Chloride, Iron with Vitamin K2-7",
+    },
+  },
+  {
+    id: 21,
+    name: "Pregic-M",
+    description: "Pregabalin and Methylcobalamin Capsules for nerve health",
+    image: "/images/IMG_3583.jpg",
+    category: "Capsules",
+    details: {
+      uses: [
+        "Neuropathic pain management",
+        "Diabetic nerve pain",
+        "Nerve health support",
+      ],
+      dosage: "As directed by the Physician",
+      composition:
+        "Each hard gelatin capsule contains: Pregabalin USP & Methylcobalamin USP",
+    },
+  },
+  {
+    id: 22,
+    name: "Pregic NT",
+    description:
+      "Pregabalin & Nortriptyline Tablets for nerve pain and depression",
+    image: "/images/IMG_3593.jpg",
+    category: "Tablets",
+    details: {
+      uses: [
+        "Neuropathic pain management",
+        "Depression treatment",
+        "Combined nerve pain and mood disorders",
+      ],
+      dosage: "As directed by the Physician",
+      composition:
+        "Each film coated tablet contains: Pregabalin BP & Nortriptyline Hydrochloride BP",
     },
   },
 ];
