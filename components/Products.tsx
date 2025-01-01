@@ -73,7 +73,7 @@ const products: Product[] = [
   },
   {
     id: 4,
-    name: "Pregnaden",
+    name: "Pregic",
     description:
       "Melatonin, Ubiquinone, Folic Acid & Vitamin D3 Capsules for pregnancy support",
     image: "/images/IMG_3584.jpg",
@@ -89,31 +89,32 @@ const products: Product[] = [
   },
   {
     id: 5,
-    name: "Neurogenic Forte",
+    name: "Olasen-5",
     description:
-      "Vitamin B6, Amino Acids, Ginkgo & Magnesium for mental and cognitive function",
+      "Olanzapine Tablets BP 5mg for mental health support",
     image: "/images/IMG_3585.jpg",
-    category: "Tablets",
+    category: "Capsules",
     details: {
       uses: [
-        "Cognitive function enhancement",
-        "Mental clarity support",
-        "Brain health maintenance",
+        "Mental health support",
+        "Anxiety management",
+        "Mental clarity",
       ],
-      composition: "Vitamin B6, Amino Acids, Ginkgo Biloba, Magnesium",
+      composition: "Olanzapine BP 5mg",
     },
   },
   {
     id: 6,
-    name: "Olasen-5",
-    description: "Olanzapine Tablets BP 5mg for mental health support",
+    name: "Pregnaden",
+    description:
+      "Melatonin, Ubiquinone, Folic Acid & Vitamin D3 Capsules for pregnancy support",
     image: "/images/IMG_3586.jpg",
-    category: "Tablets",
+    category: "Capsules",
     details: {
       uses: [
-        "Mental health management",
-        "Mood stabilization",
-        "Antipsychotic treatment",
+        "Pregnancy support",
+        "Fetal development",
+        "Maternal health maintenance",
       ],
       dosage: "5mg as prescribed",
       composition: "Olanzapine BP 5mg",
