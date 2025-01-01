@@ -57,26 +57,26 @@ const products: Product[] = [
   },
   {
     id: 3,
-    name: "Pregic-M",
-    description: "Pregabalin and Methylcobalamin Capsules for nerve health",
-    image: "/images/IMG_3583.jpg",
+    name: "Pregic",
+    description: "Pregabalin Capsule 75mg for nerve pain management",
+    image: "/images/IMG_3584.jpg",
     category: "Capsules",
     details: {
       uses: [
         "Neuropathic pain management",
-        "Diabetic nerve pain",
+        "Nerve pain relief",
         "Nerve health support",
       ],
-      dosage: "As directed by healthcare professional",
-      composition: "Pregabalin, Methylcobalamin",
+      dosage: "As directed by the Physician",
+      composition: "Each hard gelatin capsule contains: Pregabalin USP 75mg",
     },
   },
   {
     id: 4,
-    name: "Pregic",
+    name: "Pregnaden",
     description:
       "Melatonin, Ubiquinone, Folic Acid & Vitamin D3 Capsules for pregnancy support",
-    image: "/images/IMG_3584.jpg",
+    image: "/images/IMG_3586.jpg",
     category: "Capsules",
     details: {
       uses: [
@@ -89,32 +89,31 @@ const products: Product[] = [
   },
   {
     id: 5,
-    name: "Olasen-5",
+    name: "Neurogenic Forte",
     description:
-      "Olanzapine Tablets BP 5mg for mental health support",
-    image: "/images/IMG_3585.jpg",
-    category: "Capsules",
+      "Vitamin B6, Amino Acids, Ginkgo & Magnesium for mental and cognitive function",
+    image: "/images/IMG_3587.jpg",
+    category: "Tablets",
     details: {
       uses: [
-        "Mental health support",
-        "Anxiety management",
-        "Mental clarity",
+        "Cognitive function enhancement",
+        "Mental clarity support",
+        "Brain health maintenance",
       ],
-      composition: "Olanzapine BP 5mg",
+      composition: "Vitamin B6, Amino Acids, Ginkgo Biloba, Magnesium",
     },
   },
   {
     id: 6,
-    name: "Pregnaden",
-    description:
-      "Melatonin, Ubiquinone, Folic Acid & Vitamin D3 Capsules for pregnancy support",
-    image: "/images/IMG_3586.jpg",
-    category: "Capsules",
+    name: "Olasen-5",
+    description: "Olanzapine Tablets BP 5mg for mental health support",
+    image: "/images/IMG_3585.jpg",
+    category: "Tablets",
     details: {
       uses: [
-        "Pregnancy support",
-        "Fetal development",
-        "Maternal health maintenance",
+        "Mental health management",
+        "Mood stabilization",
+        "Antipsychotic treatment",
       ],
       dosage: "5mg as prescribed",
       composition: "Olanzapine BP 5mg",
@@ -124,7 +123,7 @@ const products: Product[] = [
     id: 7,
     name: "Duloxinor",
     description: "Duloxetine Tablet 30mg for depression and anxiety management",
-    image: "/images/IMG_3587.jpg",
+    image: "/images/IMG_3588.jpg",
     category: "Tablets",
     details: {
       uses: [
@@ -140,7 +139,7 @@ const products: Product[] = [
     id: 8,
     name: "Setronor",
     description: "Sertraline Hydrochloride Tablets USP 50mg for mental health",
-    image: "/images/IMG_3588.jpg",
+    image: "/images/IMG_3590.jpg",
     category: "Tablets",
     details: {
       uses: [
@@ -157,7 +156,7 @@ const products: Product[] = [
     name: "ITO-50",
     description:
       "Itopride Hydrochloride Tablets 50mg for gastrointestinal health",
-    image: "/images/IMG_3590.jpg",
+    image: "/images/IMG_3591.jpg",
     category: "Tablets",
     details: {
       uses: [
@@ -173,7 +172,7 @@ const products: Product[] = [
     id: 10,
     name: "Pipetanor",
     description: "Piperacillin and Tazobactam For Injection USP 4.5gm",
-    image: "/images/IMG_3591.jpg",
+    image: "/images/IMG_3592.jpg",
     category: "Injection",
     details: {
       uses: [
@@ -181,20 +180,20 @@ const products: Product[] = [
         "Severe infection management",
         "Hospital-acquired infection treatment",
       ],
-      dosage: "4.5gm for I.V. use only",
+      dosage: "4.5gm x 1 Vial + diluent for I.V. use only",
       composition: "Piperacillin and Tazobactam USP 4.5gm",
     },
   },
   {
     id: 11,
     name: "Ofidox",
-    description: "Ofloxacin Ophthalmic Solution USP for eye infections",
+    description: "Ofloxacin Ophthalmic Solution USP 10ml for eye infections",
     image: "/images/IMG_3603.jpg",
     category: "Eye Drops",
     details: {
       uses: ["Bacterial eye infections", "Conjunctivitis", "Corneal ulcers"],
-      dosage: "As directed by healthcare professional",
-      composition: "Ofloxacin USP",
+      dosage: "As directed by the Physician",
+      composition: "Ofloxacin Ophthalmic Solution USP",
     },
   },
   {
@@ -267,7 +266,7 @@ const products: Product[] = [
     name: "CCE Drops",
     description:
       "Sodium Carboxymethyl Cellulose Eye Drops B.P. 0.5% w/v for dry eyes",
-    image: "/images/IMG_3597.jpg",
+    image: "/images/IMG_3600.jpg",
     category: "Eye Drops",
     details: {
       uses: ["Dry eye syndrome", "Eye lubrication", "Computer vision syndrome"],
@@ -279,7 +278,7 @@ const products: Product[] = [
     name: "Floxone",
     description:
       "Ciprofloxacin Ophthalmic Solution USP for bacterial eye infections",
-    image: "/images/IMG_3600.jpg",
+    image: "/images/IMG_3597.jpg",
     category: "Eye Drops",
     details: {
       uses: ["Bacterial eye infections", "Corneal ulcers", "Conjunctivitis"],
@@ -290,16 +289,45 @@ const products: Product[] = [
     id: 18,
     name: "Ofidox-D",
     description:
-      "Ofloxacin & Dexamethasone Ophthalmic Solution for eye infections with inflammation",
+      "Ofloxacin & Dexamethasone Ophthalmic Solution 10ml for eye infections with inflammation",
     image: "/images/IMG_3601.jpg",
     category: "Eye Drops",
     details: {
       uses: [
         "Bacterial eye infections with inflammation",
-        "Post-operative eye care",
+        "Post-operative eye inflammation",
         "Inflammatory eye conditions",
       ],
-      composition: "Ofloxacin and Dexamethasone",
+      dosage: "As directed by the Physician",
+      composition: "Ofloxacin & Dexamethasone Ophthalmic Solution",
+    },
+  },
+  {
+    id: 19,
+    name: "Pregic",
+    description: "Pregabalin Capsule 75mg for nerve pain management",
+    image: "/images/IMG_3584.jpg",
+    category: "Capsules",
+    details: {
+      uses: [
+        "Neuropathic pain management",
+        "Nerve pain relief",
+        "Nerve health support",
+      ],
+      dosage: "As directed by the Physician",
+      composition: "Each hard gelatin capsule contains: Pregabalin USP 75mg",
+    },
+  },
+  {
+    id: 21,
+    name: "Mirtanor-15",
+    description: "Mirtazapine Tablets USP 15mg for depression and anxiety",
+    image: "/images/IMG_3594.jpg",
+    category: "Tablets",
+    details: {
+      uses: ["Depression treatment", "Anxiety management", "Sleep improvement"],
+      dosage: "As directed by the Physician",
+      composition: "Each Film Coated Tablet Contains: Mirtazapine USP 15mg",
     },
   },
 ];
